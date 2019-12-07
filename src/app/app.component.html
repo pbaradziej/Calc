@@ -1,0 +1,14 @@
+<div class="calculator">
+  <div class="title">{{title}}</div>
+  <input id="input" (keyup)="onKey()" (keypress)="keyboard($event)" [(ngModel)]=text>
+
+  <div class="buttons">
+    <button (click)="DigitClick($event)">0</button>
+    <button (click)="DigitClick($event)">1</button>
+    <button (click)="Clear()">C</button>
+    <button (click)="DigitClick($event)">+</button>
+    <button (click)="DigitClick($event)">-</button>
+    <button (click)="operation()">=</button>
+
+  </div>
+</div>
